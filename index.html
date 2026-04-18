@@ -11,7 +11,6 @@
         padding: 0;
       }
       nav {
-  background: linear-gradient(135deg, #00008B, #B8860B);
         background-color: #222;
         display: flex;
         justify-content: center;
@@ -28,12 +27,7 @@
       nav a:hover {
         color: lightblue;
       }
-      hheader {
-  background: linear-gradient(135deg, #00008B, #FFD700);
-  color: white;
-  text-align: center;
-  padding: 60px;
-}
+      header {
         background-color: darkblue;
         color: white;
         text-align: center;
@@ -44,39 +38,7 @@
         margin: 40px auto;
         padding: 20px;
       }
-      <div class="tarjetas">
-  <div class="tarjeta">
-    <div style="font-size: 40px;">🌐</div>
-    <h3>Paginas Web</h3>
-    <p>Diseño sitios modernos para tu negocio</p>
-  </div>
-  <div class="tarjetas">
-  <div class="tarjeta">
-    <div style="font-size: 40px;">💻</div>
-    <h3>Paginas Web</h3>
-    <p>Diseño sitios modernos para tu negocio</p>
-  </div>
-  <div class="tarjeta">
-    <div style="font-size: 40px;">💼</div>
-    <h3>Tiendas Online</h3>
-    <p>Vende tus productos por internet</p>
-  </div>
-  <div class="tarjeta">
-    <div style="font-size: 40px;">⚙️</div>
-    <h3>Mantenimiento</h3>
-    <p>Actualizo y mejoro tu sitio existente</p>
-  </div>
-</div>
-    <div style="font-size: 40px;">🛒</div>
-    <h3>Tiendas Online</h3>
-    <p>Vende tus productos por internet</p>
-  </div>
-  <div class="tarjeta">
-    <div style="font-size: 40px;">🔧</div>
-    <h3>Mantenimiento</h3>
-    <p>Actualizo y mejoro tu sitio existente</p>
-  </div>
-</div>
+      .tarjetas {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
@@ -142,9 +104,9 @@
       <a href="#contacto">Contacto</a>
     </nav>
     <header id="inicio">
-  <div style="font-size: 28px; font-weight: bold; letter-spacing: 3px; margin-bottom: 10px;">
-    ✦ EA ✦
-  </div>>
+      <div style="font-size: 28px; font-weight: bold; letter-spacing: 3px; margin-bottom: 10px;">
+        ✦ EA ✦
+      </div>
       <h1>Bienvenido a mi sitio</h1>
       <p>Diseño de paginas web profesionales</p>
     </header>
@@ -169,11 +131,11 @@
       <h2 style="text-align:center; color:darkblue">Sobre mi</h2>
       <p style="text-align:center">Hola! Me llamo Enrique y estoy aprendiendo a crear sitios web profesionales.</p>
     </section>
-    <<form class="contacto" id="contacto" action="https://formspree.io/f/mnjlvnwo" method="POST">
+    <form class="contacto" id="contacto" action="https://formspree.io/f/mnjlvnwo" method="POST">
       <h2 style="text-align:center; color:darkblue">Contactame</h2>
       <input type="text" name="nombre" placeholder="Tu nombre">
-<input type="email" name="email" placeholder="Tu email">
-<textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+      <input type="email" name="email" placeholder="Tu email">
+      <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
       <button>Enviar mensaje</button>
     </form>
     <footer>
