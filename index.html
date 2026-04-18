@@ -28,10 +28,27 @@
         color: lightblue;
       }
       header {
-        background-color: darkblue;
-        color: white;
-        text-align: center;
-        padding: 60px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header h1 {
+  animation: aparecer 1s ease;
+}
+header p {
+  animation: aparecer 1.5s ease;
+}
       }
       section {
         max-width: 900px;
