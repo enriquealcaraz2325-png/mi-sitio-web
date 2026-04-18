@@ -16,17 +16,22 @@
         justify-content: center;
         gap: 30px;
         padding: 15px;
+        position: sticky;
+        top: 0;
       }
       nav a {
         color: white;
         text-decoration: none;
         font-size: 18px;
       }
+      nav a:hover {
+        color: lightblue;
+      }
       header {
         background-color: darkblue;
         color: white;
         text-align: center;
-        padding: 40px;
+        padding: 60px;
       }
       section {
         max-width: 900px;
@@ -93,16 +98,16 @@
   </head>
   <body>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Servicios</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mi</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-    <header>
+    <header id="inicio">
       <h1>Bienvenido a mi sitio</h1>
       <p>Diseño de paginas web profesionales</p>
     </header>
-    <section>
+    <section id="servicios">
       <h2 style="text-align:center">Mis Servicios</h2>
       <div class="tarjetas">
         <div class="tarjeta">
@@ -119,7 +124,11 @@
         </div>
       </div>
     </section>
-    <div class="contacto">
+    <section id="sobre-mi">
+      <h2 style="text-align:center; color:darkblue">Sobre mi</h2>
+      <p style="text-align:center">Hola! Me llamo Enrique y estoy aprendiendo a crear sitios web profesionales.</p>
+    </section>
+    <div class="contacto" id="contacto">
       <h2 style="text-align:center; color:darkblue">Contactame</h2>
       <input type="text" placeholder="Tu nombre">
       <input type="email" placeholder="Tu email">
