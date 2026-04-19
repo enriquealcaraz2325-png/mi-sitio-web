@@ -24,32 +24,19 @@
         text-decoration: none;
         font-size: 18px;
       }
-      nav a:hover {
-        color: lightblue;
+      nav a:hover { color: lightblue; }
+      @keyframes aparecer {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
       }
       header {
-  background-color: darkblue;
-  color: white;
-  text-align: center;
-  padding: 60px;
-}
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-header h1 {
-  animation: aparecer 1s ease;
-}
-header p {
-  animation: aparecer 1.5s ease;
-}
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 60px;
       }
+      header h1 { animation: aparecer 1s ease; }
+      header p { animation: aparecer 1.5s ease; }
       section {
         max-width: 900px;
         margin: 40px auto;
@@ -69,9 +56,7 @@ header p {
         text-align: center;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
-      .tarjeta h3 {
-        color: darkblue;
-      }
+      .tarjeta h3 { color: darkblue; }
       .contacto {
         background: white;
         border-radius: 10px;
@@ -90,9 +75,7 @@ header p {
         font-size: 16px;
         box-sizing: border-box;
       }
-      .contacto textarea {
-        height: 120px;
-      }
+      .contacto textarea { height: 120px; }
       button {
         background-color: darkblue;
         color: white;
@@ -117,15 +100,8 @@ header p {
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
-      <section id="sobre-mi">
-  <h2 style="text-align:center; color:darkblue">Sobre mi</h2>
-  
-    <img src="Gemini_Generated_Image_kp3y22kp3y22kp3y.png" 
-         alt="Foto de Enrique" 
-         style="width:150px; height:150px; border-radius:50%; object-fit:cover; "
-  </div>
-  <p style="text-align:center"Hola! Me llamo Enrique y soy creador de sitios web profesionales.
-</section>
+      <a href="#sobre-mi">Sobre mi</a>
+      <a href="#precios">Precios</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <header id="inicio">
@@ -156,9 +132,9 @@ header p {
       <h2 style="text-align:center; color:darkblue; margin-bottom:30px">Precios</h2>
       <div class="tarjetas">
         <div class="tarjeta">
-          <h3>Página Web Básica</h3>
+          <h3>Pagina Web Basica</h3>
           <div style="font-size:36px; color:darkblue; font-weight:bold; margin:15px 0">$80.000</div>
-          <p>Sitio moderno de hasta 3 páginas</p>
+          <p>Sitio moderno de hasta 3 paginas</p>
           <p>✓ Diseño profesional</p>
           <p>✓ Formulario de contacto</p>
           <p>✓ Adaptado al celular</p>
@@ -166,8 +142,8 @@ header p {
         <div class="tarjeta">
           <h3>Tienda Online</h3>
           <div style="font-size:36px; color:darkblue; font-weight:bold; margin:15px 0">$150.000</div>
-          <p>Vendé tus productos por internet</p>
-          <p>✓ Catálogo de productos</p>
+          <p>Vende tus productos por internet</p>
+          <p>✓ Catalogo de productos</p>
           <p>✓ Carrito de compras</p>
           <p>✓ Medios de pago</p>
         </div>
@@ -177,12 +153,13 @@ header p {
           <p>Mensual</p>
           <p>✓ Actualizaciones</p>
           <p>✓ Cambios de contenido</p>
-          <p>✓ Soporte técnico</p>
+          <p>✓ Soporte tecnico</p>
         </div>
       </div>
     </section>
+    <section id="sobre-mi">
       <h2 style="text-align:center; color:darkblue">Sobre mi</h2>
-      <p style="text-align:center">Hola! Me llamo Enrique y soy creador de sitios web profesionales.</p>
+      <p style="text-align:center">Hola! Me llamo Enrique y soy creador de paginas web profesionales.</p>
     </section>
     <form class="contacto" id="contacto" action="https://formspree.io/f/mnjlvnwo" method="POST">
       <h2 style="text-align:center; color:darkblue">Contactame</h2>
